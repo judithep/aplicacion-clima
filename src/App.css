@@ -1,0 +1,265 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.App{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:  url(./assets/R.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card{
+    background-color: rgba(218, 248, 253, 0.781);
+    opacity: 0,5;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(17, 143, 201);
+    border-radius: 30px;
+   
+  
+  }
+  .card__header{
+    text-align: center;
+    
+    
+
+  }
+  .card__title{
+    padding-top: 30px;
+    font-size: 30px;
+    color: black;
+
+  }
+  .card__subtitle{
+    padding: 8px;
+    font-size: 20 ;
+    color: black;
+    
+
+  }
+  .card__grid{
+    display: grid;
+    grid-template-rows: 1fr  ;
+    grid-template-columns: 1fr 1fr ;
+
+  }
+  .card__icon-container{
+   color: #000;
+  }
+ 
+  .card__temp{
+    text-align: center;
+
+  }
+ 
+  .card__description{
+    text-align: center;
+    padding: 40px;
+    color: #000;
+    font-size: 25px;
+    
+  }
+  .card__list{
+    list-style: none;
+    
+
+  }
+  .card__item{
+    padding: 5px;
+    color: black;
+
+  }
+  .card__span{
+   color: rgb(17, 143, 201);
+   
+
+  }
+  .card__footer{
+    padding: 20px;
+    
+
+  }
+  .card__btn{
+    padding: 0.5px 1em;
+    color:rgb(255, 255, 255);
+    background-color: rgb(17, 143, 201);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 1rem;
+    box-shadow: 4px 4px 4px 3px rgb(134, 195, 219);
+  }
+  .card__btn:hover{
+  transform: scale(1.04);
+  }
+
+  .card__btn:active{
+    transform: scale(1);
+    box-shadow: 1px 1px 5px rgb(134, 195, 219);
+  }
+  
+  .loader {
+    width: 160px;
+    height: 185px;
+    position: relative;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+  }
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    background-image: radial-gradient(circle, #000 48%, transparent 55%),
+      radial-gradient(circle, #000 48%, transparent 55%),
+      radial-gradient(circle, #fff 30%, transparent 45%),
+      radial-gradient(circle, #000 48%, transparent 51%),
+      linear-gradient(#000 20px, transparent 0),
+      linear-gradient(#cfecf9 60px, transparent 0),
+      radial-gradient(circle, #cfecf9 50%, transparent 51%),
+      radial-gradient(circle, #cfecf9 50%, transparent 51%);
+    background-repeat: no-repeat;
+    background-size: 16px 16px, 16px 16px, 10px 10px, 42px 42px, 12px 3px,
+      50px 25px, 70px 70px, 70px 70px;
+    background-position: 25px 10px, 55px 10px, 36px 44px, 50% 30px, 50% 85px,
+      50% 50px, 50% 22px, 50% 45px;
+    animation: faceLift 3s linear infinite alternate;
+  }
+  .loader:before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 125px;
+    left: -20%;
+    top: 0;
+    background-image: radial-gradient(circle, #fff 48%, transparent 50%),
+      radial-gradient(circle, #fff 48%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+    background-position: 0px 12px, 145px 12px;
+    animation: earLift 3s linear infinite alternate;
+  }
+  
+  .loader {
+    width: 160px;
+    height: 185px;
+    position: relative;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+  }
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    background-image: radial-gradient(circle, #000 48%, transparent 55%),
+      radial-gradient(circle, #000 48%, transparent 55%),
+      radial-gradient(circle, #fff 30%, transparent 45%),
+      radial-gradient(circle, #000 48%, transparent 51%),
+      linear-gradient(#000 20px, transparent 0),
+      linear-gradient(#cfecf9 60px, transparent 0),
+      radial-gradient(circle, #cfecf9 50%, transparent 51%),
+      radial-gradient(circle, #cfecf9 50%, transparent 51%);
+    background-repeat: no-repeat;
+    background-size: 16px 16px, 16px 16px, 10px 10px, 42px 42px, 12px 3px,
+      50px 25px, 70px 70px, 70px 70px;
+    background-position: 25px 10px, 55px 10px, 36px 44px, 50% 30px, 50% 85px,
+      50% 50px, 50% 22px, 50% 45px;
+    animation: faceLift 3s linear infinite alternate;
+  }
+  .loader:before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 125px;
+    left: -20%;
+    top: 0;
+    background-image: radial-gradient(circle, #fff 48%, transparent 50%),
+      radial-gradient(circle, #fff 48%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+    background-position: 0px 12px, 145px 12px;
+    animation: earLift 3s linear infinite alternate;
+  }
+  .loader {
+    width: 160px;
+    height: 185px;
+    position: relative;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+  }
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    background-image: radial-gradient(circle, #000 48%, transparent 55%),
+      radial-gradient(circle, #000 48%, transparent 55%),
+      radial-gradient(circle, #fff 30%, transparent 45%),
+      radial-gradient(circle, #000 48%, transparent 51%),
+      linear-gradient(#000 20px, transparent 0),
+      linear-gradient(#cfecf9 60px, transparent 0),
+      radial-gradient(circle, #cfecf9 50%, transparent 51%),
+      radial-gradient(circle, #cfecf9 50%, transparent 51%);
+    background-repeat: no-repeat;
+    background-size: 16px 16px, 16px 16px, 10px 10px, 42px 42px, 12px 3px,
+      50px 25px, 70px 70px, 70px 70px;
+    background-position: 25px 10px, 55px 10px, 36px 44px, 50% 30px, 50% 85px,
+      50% 50px, 50% 22px, 50% 45px;
+    animation: faceLift 3s linear infinite alternate;
+  }
+  .loader:before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 125px;
+    left: -20%;
+    top: 0;
+    background-image: radial-gradient(circle, #fff 48%, transparent 50%),
+      radial-gradient(circle, #fff 48%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+    background-position: 0px 12px, 145px 12px;
+    animation: earLift 3s linear infinite alternate;
+  }
+  
+  @keyframes faceLift {
+    0% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+  @keyframes earLift {
+    0% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+    
+    
+
+
+  
